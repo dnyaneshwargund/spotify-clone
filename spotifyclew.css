@@ -402,6 +402,9 @@ h2{
     .othercontent {
         display: none;
     }
+      .album {
+        width:35%;
+    }
 
     .album-img {
         height: 45px;
@@ -414,14 +417,23 @@ h2{
 
     .album-text {
         margin-left: 0.4rem;
+         min-width:0;
     }
 
     .album-text .card-title {
         font-size: 0.6rem !important;
+         margin:0;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
     }
 
     .album-text .card-info {
         font-size: 0.5rem !important;
+         margin:0.2rem 0 0 0;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
     }
 
     /* Player controls */
