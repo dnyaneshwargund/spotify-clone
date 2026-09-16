@@ -4,7 +4,7 @@
   margin:0;
   /* background-color:black; */
   color:white;
-  overflow:hidden;
+  /* overflow:hidden; */
 
 
 }
@@ -188,7 +188,7 @@ a{
     font-size:0.85rem;
     opacity: 0.7;
 }
-img{
+.card-img{
     height:168px;
     width:220px;
 }
@@ -328,4 +328,135 @@ h2{
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
+}
+ @media (max-width: 768px) {
+
+    /* Sidebar */
+    .sidebar {
+        width: 70px;
+        margin-right: 0.3rem;
+    }
+
+    /* Hide text from sidebar */
+    .sidebar .nav-option a,
+    .sidebar .libary-option a,
+    .sidebar .box,
+    .sidebar .icons {
+        display: none;
+    }
+
+    .nav-option {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .nav-option a {
+        margin-left: 0;
+    }
+
+    /* Main content */
+    .main-content {
+        padding: 0 0.75rem;
+    }
+
+    /* Cards */
+    .card {
+        width: 120px;
+        padding: 0.7rem;
+        margin-left: 0.5rem;
+    }
+
+    .card-content {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .card-info {
+        margin: 0.5rem 0 0 0;
+        font-size: 0.7rem;
+    }
+
+    .card-title {
+        font-size: 0.8rem;
+    }
+
+    /* Images */
+    .card-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Music player */
+    .music-player {
+        height: 65px;
+    }
+
+    .album {
+        width: 30%;
+    }
+
+    .player {
+        width: 70%;
+    }
+
+    .othercontent {
+        display: none;
+    }
+
+    .album-img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .album-data {
+        margin-left: 0.3rem;
+    }
+
+    .album-text {
+        margin-left: 0.4rem;
+    }
+
+    .album-text .card-title {
+        font-size: 0.6rem !important;
+    }
+
+    .album-text .card-info {
+        font-size: 0.5rem !important;
+    }
+
+    /* Player controls */
+    .player-control i {
+        margin-right: 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .player-control i:nth-child(1),
+    .player-control i:nth-child(5) {
+        display: none;
+    }
+
+    /* Playback bar */
+    .progress-bar {
+        width: 60%;
+    }
+
+    .curr-time,
+    .tot-time {
+        font-size: 0.6rem;
+    }
+
+    /* Top navigation */
+    .sticky-nav-option .nav-item {
+        margin-right: 0.4rem;
+    }
+
+    .sticky-nav-option .badge {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .sticky-nav-icon {
+        margin-left: 0.2rem;
+        font-size: 1rem;
+    }
 }
